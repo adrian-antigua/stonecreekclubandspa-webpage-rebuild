@@ -4,6 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Hero } from "@/components/ui/Hero";
 import { HoursTable } from "@/components/ui/HoursTable";
 import { ImageTextSection } from "@/components/ui/ImageTextSection";
+import { MembershipRates } from "@/components/ui/MembershipRates";
 import { PullQuote } from "@/components/ui/PullQuote";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -192,24 +193,7 @@ export default function Home() {
             </div>
           </div>
 
-          <ul className="grid border-t border-slate-950 md:grid-cols-3">
-            {memberships.map((m, i) => (
-              <Reveal
-                as="li"
-                key={m.name}
-                delay={i * 100}
-                className="flex flex-col gap-5 border-b border-stone-300 py-10 md:border-b-0 md:px-10 md:first:pl-0 md:last:pr-0 md:[&:not(:first-child)]:border-l"
-              >
-                <h3 className="eyebrow text-slate-600">{m.name}</h3>
-                <p className="font-display text-display-lg font-light">
-                  {m.rate}
-                  <span className="ml-2 font-sans text-small font-normal text-warmgray-700">/ month plus tax</span>
-                </p>
-                <p className="text-body text-warmgray-700">{m.covers}</p>
-                <p className="mt-auto text-small text-slate-600">Enrollment {m.enrollment} (plus tax)</p>
-              </Reveal>
-            ))}
-          </ul>
+          <MembershipRates memberships={memberships} />
         </div>
       </section>
 

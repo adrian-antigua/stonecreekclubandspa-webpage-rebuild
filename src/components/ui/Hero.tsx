@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { cn } from "@/lib/cn";
 import { Button } from "./Button";
 import { HeroVideo } from "./HeroVideo";
 
@@ -16,14 +17,19 @@ type HeroProps = {
   cta?: { label: string; href: string };
   /** Anchor the scroll cue points to. */
   scrollTo?: string;
+  /** "full" fills the viewport (home); "page" is a shorter hero for inner pages. */
+  size?: "full" | "page";
 };
 
 /** Full-bleed cinematic hero. Marks itself as [data-nav-hero] so the nav starts transparent. */
-export function Hero({ title, subtitle, eyebrow, poster, videoId, videoTitle, cta, scrollTo }: HeroProps) {
+export function Hero({ title, subtitle, eyebrow, poster, videoId, videoTitle, cta, scrollTo, size = "full" }: HeroProps) {
   return (
     <section
       data-nav-hero
-      className="tone-dark relative flex min-h-[100svh] items-end overflow-hidden bg-slate-950 text-stone-50"
+      className={cn(
+        "tone-dark relative flex items-end overflow-hidden bg-slate-950 text-stone-50",
+        size === "full" ? "min-h-[100svh]" : "min-h-[72svh] md:min-h-[78svh]",
+      )}
     >
       <Image src={poster.src} alt={poster.alt} fill preload sizes="100vw" className="animate-slow-zoom object-cover" />
       {videoId && <HeroVideo id={videoId} title={videoTitle ?? "Background video"} />}

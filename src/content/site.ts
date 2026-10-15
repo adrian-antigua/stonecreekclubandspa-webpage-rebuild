@@ -205,3 +205,29 @@ export const memberships: Membership[] = [
 
 export const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=Stone+Creek+Club+and+Spa%2C+1201+Ochsner+Blvd%2C+Covington%2C+LA+70433";
+
+export type TeamMember = { name: string; title: string; email: string };
+
+/** Member Services team as listed on /membership (6 people as of 2026-10-15). */
+export const memberServicesTeam: TeamMember[] = [
+  { name: "Julie Rideau", title: "Member Services Representative", email: "JulieR@stonecreekclubandspa.com" },
+  { name: "Michelle Gaudet", title: "Member Services Representative", email: "Michelleg@stonecreekclubandspa.com" },
+  { name: "Claudia Guidry", title: "Marketing Coordinator", email: "ClaudiaG@stonecreekclubandspa.com" },
+  { name: "Robyn Ferguson", title: "Member Services Representative", email: "RobynF@stonecreekclubandspa.com" },
+  { name: "Ava Smith", title: "Member Services Representative", email: "AvaS@stonecreekclubandspa.com" },
+  { name: "Jordan Schaefer", title: "Member Services Representative", email: "JordanS@stonecreekclubandspa.com" },
+];
+
+/** New Member Benefits from /membership-rates (verbatim). */
+export const newMemberBenefits = [
+  "Club Consultation",
+  "2 One Hour Personal Training Sessions or FITCORE Class",
+  "Tennis or Pickleball Assessment",
+  "Complimentary Enhancement on Your First Service in The Spa",
+  "Consultation at The Movement Science Center",
+];
+
+export const trainAwayCopy =
+  "Stone Creek members may enjoy discounted guest privileges when traveling out of town, thanks to our partnership with the Health & Fitness Association Passport Program & TrainAway. Simply download the free TrainAway app, enter your invitation code (provided by Member Services), search for a club in the town you're visiting, and purchase your discounted pass(es).";
+
+export const virtualTourUrl = "https://www.youtube.com/watch?v=ONwzG9uqJNU";

@@ -13,7 +13,8 @@ import { PullQuote } from "@/components/ui/PullQuote";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatBand } from "@/components/ui/StatBand";
 import { VideoEmbed } from "@/components/ui/VideoEmbed";
-import { amenities, hours, referralSources, site, stats, testimonials, visitInterests } from "@/content/site";
+import { visitFormFields } from "@/content/forms";
+import { amenities, hours, site, stats, testimonials } from "@/content/site";
 import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
@@ -62,14 +63,7 @@ const spacing = [
 
 const amenityCards: CardData[] = amenities;
 
-const visitFields: FormField[] = [
-  { type: "text", name: "firstName", label: "First Name", required: true, half: true, autoComplete: "given-name" },
-  { type: "text", name: "lastName", label: "Last Name", required: true, half: true, autoComplete: "family-name" },
-  { type: "email", name: "email", label: "Email", required: true, half: true, autoComplete: "email" },
-  { type: "tel", name: "phone", label: "Phone number", required: true, half: true, autoComplete: "tel" },
-  { type: "select", name: "interest", label: "Let Us Know Your Interests!", options: visitInterests, half: true },
-  { type: "select", name: "referral", label: "How'd You Hear About Us?", options: referralSources, half: true },
-];
+const visitFields: FormField[] = visitFormFields;
 
 function GuideSection({ id, index, title, note, children, className }: { id: string; index: string; title: string; note?: string; children: ReactNode; className?: string }) {
   return (
