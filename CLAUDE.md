@@ -46,10 +46,10 @@ luxury-hospitality system as the references, tuned for a Louisiana resort:
 2. **Editorial typography** — serif display (Fraunces / Cormorant Garamond / Playfair) +
    clean sans body (DM Sans / Inter). Large scale, generous leading, tracked uppercase
    eyebrows.
-3. **Palette** — derive from the Stone Creek logo in `/reference/brand/`. The property is
-   pines, wetlands, clay courts, saltwater: expect a deep green or slate anchor, warm
-   cream/stone neutral, and one earthy accent (clay terracotta or brass). No pure black,
-   no pure white, no SaaS blue.
+3. **Palette** — Derive from the logo in reference/brand/ — sky blue and warm gray.
+   Anchor: a deep slate or navy that the sky blue sits on; neutral: warm stone/cream;
+   accent: the logo's sky blue, used sparingly. Clay-court terracotta may appear only in
+   photography. No pure black, no pure white, no SaaS blue.
 4. **Alternating image/text sections** — eyebrow → short headline → 2–3 sentences →
    text-link CTA, large photo alongside, left/right alternating, py-24 to py-40.
 5. **Minimal nav** — logo left, 6 links max (Membership, Fitness, Tennis, Spa, Kids,
@@ -73,7 +73,7 @@ dumbbell photos, HubSpot-style stacked full-width color bands.
   Family & Pebble Creek), video (virtual tour), pull quote, membership CTA, location strip.
 - `/membership` — "Everyday Getaway" intro; Individual / Couple / Family as editorial
   cards with real rates and enrollment fees; New Member Benefits list; month-to-month
-  promise; Member Services team grid (8 people, photos as placeholders unless provided);
+  promise; Member Services team grid (6 people, photos as placeholders unless provided);
   TrainAway passport note; schedule-a-visit DemoForm.
 - `/fitness` — floor description (two-story windows, pine ceilings, equipment brands),
   Group Fitness (75+ classes, 4 studios), FITCORE/Pilates, Fascial Stretch Therapy,

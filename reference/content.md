@@ -6,7 +6,7 @@
 > **Nothing goes on the site that isn't here.**
 >
 > Source tags used below: *(site /page)* · *(Member Guide PDF)* · *(Spa Menu PDF)* etc.
-> Where sources disagree, both are listed under **⚠ Conflicts** — confirm with the club
+> Where sources disagree, see **Conflicts** — resolved items name the figure to use; ⚠ items still need confirming with the club
 > before publishing a number.
 
 ## Identity
@@ -38,19 +38,18 @@
   shown on /employment (year not stated in text)
 - **Google Maps embed:** https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.4434628295303!2d-90.1424528!3d30.451874999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86275cba57bc2def%3A0xa9b8a06b62f4b785!2sStone%20Creek%20Club%20and%20Spa!5e0!3m2!1sen!2sus!4v1735686951690!5m2!1sen!2sus
 
-### ⚠ Conflicts (as published on 2026-10-15)
-- **Pickleball courts:** /tennis says 4 (+ practice court doubles as pickleball); home and
-  /premier-club say 5; Member Guide PDF says 7.
-- **Tennis courts:** /tennis says 19 courts total (9 clay + 5 hard + 4 pickleball + practice);
-  home and Member Guide say "14 tournament-quality tennis courts" (= 9 + 5).
-- **Group fitness studios:** /fitness, /group-fitness and Member Guide say 4; /premier-club
-  landing page says 5.
-- **Weekly classes:** "75+" / "more than 75" (home, /fitness); "over 77" (/group-fitness).
-- **Family Workout Times:** /youth-fitness says Thu 7 PM–close, Fri 2 PM–close, Sat & Sun
-  1 PM–close; Member Guide PDF says Wed & Thu 7 PM–close, Fri 1 PM–close, Sat & Sun
-  12 PM–close.
-- **Second spa package name:** /spa calls both packages "Signature Creekside Retreat";
-  Spa Menu PDF names the second one "Creekside Renewal Ritual".
+### Conflicts — resolved for the site (sources disagreed as published on 2026-10-15)
+- **Pickleball courts → use 4.** (Also published: 5 on home and /premier-club, 7 in Member Guide PDF.)
+- **Group fitness studios → use 4.** (Also published: 5 on /premier-club.)
+- **Weekly classes → use 75+.** (Also published: "over 77" on /group-fitness.)
+- **Second spa package name → use "Signature Creekside Retreat"** (the /spa page's name).
+  (Also published: "Creekside Renewal Ritual" in the Spa Menu PDF.)
+- ⚠ **Still open — tennis courts:** /tennis says 19 courts total (9 clay + 5 hard + 4
+  pickleball + practice); home and Member Guide say "14 tournament-quality tennis courts"
+  (= 9 + 5).
+- ⚠ **Still open — Family Workout Times:** /youth-fitness says Thu 7 PM–close, Fri 2 PM–close,
+  Sat & Sun 1 PM–close; Member Guide PDF says Wed & Thu 7 PM–close, Fri 1 PM–close, Sat &
+  Sun 12 PM–close.
 
 ## Hours
 **Club:** Mon–Thu 4:45 AM–9:00 PM · Fri 4:45 AM–8:00 PM · Sat 7:00 AM–6:00 PM · Sun 8:00 AM–6:00 PM
@@ -144,15 +143,12 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
 - Ava Smith — Member Services Representative — AvaS@stonecreekclubandspa.com (also
   handles employment meet-and-greets)
 - Jordan Schaefer — Member Services Representative — JordanS@stonecreekclubandspa.com
-- ⚠ **No longer on the page as of 2026-10-15:** Hope Riccobono (Membership Director,
-  Hoper@stonecreekclubandspa.com) and Cathy West (Member Services Representative) were
-  listed in the earlier scrape but are absent from the live page and its HTML. Team is
-  now 6, not 8. Membership Director currently `[TBD]`.
+- **Membership Director:** `[TBD]`
 
 ## Stat band (their own numbers)
 - **19 Courts** — 9 clay Hydro-Courts, 5 hard-surface competitive courts, 4 pickleball
-  courts, 1 lighted practice court with hitting wall (doubles as pickleball) — see ⚠
-  Conflicts
+  courts, 1 lighted practice court with hitting wall (doubles as pickleball) — see
+  Conflicts (tennis court total still open)
 - **25 Meters** — 6-lane heated saltwater lap pool + resort-style pool with zero-entry
   beach and spray features
 - **75+ Classes** — complimentary weekly group fitness across 4 studios
@@ -210,8 +206,7 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
   no-show = full charge.
 
 ### Group Fitness (/group-fitness)
-- "Stone Creek's group fitness program offers over 77 complimentary classes each week,
-  designed to energize, challenge, and inspire every fitness level."
+- Use **75+ complimentary classes each week** (see Conflicts; this page itself says "over 77").
 - **Four studios:** Mind Body Studio · Spin Studio · Pilates Reformer Studio ·
   Cardio/Strength Studio. Classes complimentary for members 14+.
 - **Class formats:** Aqua Fitness · Barre Burn · Bells & Bands · BodyCombat™ ·
@@ -363,8 +358,9 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
 - **Packages:**
   - Signature Creekside Retreat — Signature Massage + Facial + Manicure + Pedicure, spa
     meal, gratuities included — **$480**
-  - Creekside Renewal Ritual (PDF name; see ⚠ Conflicts) — Facelift Facial + Pure
-    Hydration Ritual + Stone Creek Pedicure, spa meal, gratuities included — **$470**
+  - Signature Creekside Retreat (ritual package; /spa name — see Conflicts) — Facelift
+    Facial + Pure Hydration Ritual + Stone Creek Pedicure, spa meal, gratuities included —
+    **$470**
   - Spa Day Groups — full club access, café menu served for the group, complimentary
     bottle of champagne (price `[TBD]`)
 - **Massages:**
@@ -443,7 +439,7 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
   Program) certification.
 - **10 and under:** checked in and supervised; tennis, pickleball, café, pools with direct
   supervision; never strength floor, cardio deck or group fitness.
-- Family Workout Times — see ⚠ Conflicts.
+- Family Workout Times — see Conflicts (still open).
 - Family BOOtcamp (ages 7+) listed on Events.
 
 ## The Café at Stone Creek (/cafe-catering, /menu, Café Menu 2025 PDF)
