@@ -1,26 +1,238 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/*
+ * Stone Creek design tokens.
+ * Palette is derived from the logo: sky-blue water mark + warm-gray wordmark,
+ * anchored on a deep blue slate. Tailwind's default palette is reset so only
+ * brand colors exist (no pure black / pure white).
+ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-*: initial;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Anchor */
+  --color-slate-950: #1f2c36;
+  --color-slate-800: #2e3d48;
+  --color-slate-600: #4e5d68;
+
+  /* Neutral ground */
+  --color-stone-50: #f4efe7;
+  --color-stone-100: #ece5da;
+  --color-stone-300: #d8cebf;
+
+  /* Warm gray (logo wordmark) */
+  --color-warmgray-500: #8c857b;
+  --color-warmgray-700: #5f5950;
+
+  /* Accent — the logo's sky blue, used sparingly */
+  --color-sky-300: #a9d2ee;
+  --color-sky-500: #5b9fd3;
+  --color-sky-700: #2c6898;
+
+  /* Functional — form validation only */
+  --color-error: #9b3b2f;
+
+  /* Type families (set by next/font in layout.tsx) */
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
+
+  /* Type scale */
+  --text-display-xl: clamp(3rem, 8vw, 7.5rem);
+  --text-display-xl--line-height: 0.95;
+  --text-display-xl--letter-spacing: 0.04em;
+  --text-display-lg: clamp(2.5rem, 5.5vw, 4.75rem);
+  --text-display-lg--line-height: 1;
+  --text-h2: clamp(2rem, 3.6vw, 3.25rem);
+  --text-h2--line-height: 1.1;
+  --text-h3: clamp(1.5rem, 2vw, 1.875rem);
+  --text-h3--line-height: 1.2;
+  --text-quote: clamp(1.75rem, 3.4vw, 3rem);
+  --text-quote--line-height: 1.25;
+  --text-body-lg: 1.25rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.7;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.22em;
+
+  /* Motion */
+  --ease-gentle: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-slow-zoom: slow-zoom 20s ease-out both;
+
+  @keyframes slow-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.06);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-stone-50);
+    color: var(--color-slate-950);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sky-700);
+    outline-offset: 3px;
+  }
+
+  .tone-dark :focus-visible,
+  .tone-dark:focus-visible {
+    outline-color: var(--color-sky-300);
+  }
+
+  ::selection {
+    background-color: var(--color-sky-300);
+    color: var(--color-slate-950);
+  }
+}
+
+/* Layout */
+@utility container-site {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2.5rem;
+  }
+  @media (width >= 80rem) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility section {
+  padding-block: 5rem;
+  @media (width >= 48rem) {
+    padding-block: 8rem;
+  }
+}
+
+@utility section-lg {
+  padding-block: 6rem;
+  @media (width >= 48rem) {
+    padding-block: 10rem;
+  }
+}
+
+/* Type roles */
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-eyebrow);
+  line-height: var(--text-eyebrow--line-height);
+  letter-spacing: var(--text-eyebrow--letter-spacing);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Scroll reveal — only hides content when JS can reveal it again */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 700ms var(--ease-gentle),
+      transform 700ms var(--ease-gentle);
+  }
+  [data-reveal="visible"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-slow-zoom {
+    animation: none;
+  }
+}
+
+/* Hide scrollbar on card rails while keeping them scrollable */
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+ * Site header. Solid by default; transparent while a [data-nav-hero] element is on
+ * the page and the visitor is near the top. Hero detection is pure CSS (:has) so the
+ * first paint is already correct — JS only reports scroll position via data-scrolled.
+ */
+.site-header {
+  background-color: rgb(244 239 231 / 0.95);
+  border-bottom: 1px solid var(--color-stone-300);
+  color: var(--color-slate-950);
+  backdrop-filter: blur(6px);
+  transition:
+    background-color 500ms var(--ease-gentle),
+    border-color 500ms var(--ease-gentle),
+    color 500ms var(--ease-gentle);
+}
+.site-header .logo-on-dark,
+.site-header .nav-gradient {
+  display: none;
+}
+.site-header .nav-cta {
+  background-color: var(--color-slate-950);
+  color: var(--color-stone-50);
+}
+.site-header .nav-cta:hover {
+  background-color: var(--color-slate-800);
+}
+.site-header .nav-quiet {
+  color: var(--color-slate-600);
+}
+.site-header .nav-link::after {
+  background-color: var(--color-sky-700);
+}
+
+body:has([data-nav-hero]) .nav-spacer {
+  display: none;
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-stone-50);
+  backdrop-filter: none;
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .logo-on-light {
+  display: none;
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .logo-on-dark,
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .nav-gradient {
+  display: block;
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .nav-cta {
+  background-color: var(--color-stone-50);
+  color: var(--color-slate-950);
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .nav-cta:hover {
+  background-color: var(--color-stone-100);
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .nav-quiet {
+  color: var(--color-stone-100);
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) .nav-link::after {
+  background-color: var(--color-sky-300);
+}
+body:has([data-nav-hero]) .site-header:not([data-scrolled="true"]) :focus-visible {
+  outline-color: var(--color-sky-300);
 }
