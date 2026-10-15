@@ -10,7 +10,7 @@ type CardRailProps = {
 };
 
 export function CardRail({ cards, label }: CardRailProps) {
-  const trackRef = useRef<HTMLUListElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
 
@@ -36,7 +36,7 @@ export function CardRail({ cards, label }: CardRailProps) {
     const el = trackRef.current;
     const first = el?.querySelector("li");
     if (!el || !first) return;
-    const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
+    const gap = parseFloat(getComputedStyle(first.parentElement!).columnGap) || 0;
     el.scrollBy({ left: dir * (first.getBoundingClientRect().width + gap), behavior: "smooth" });
   };
 
@@ -45,24 +45,26 @@ export function CardRail({ cards, label }: CardRailProps) {
 
   return (
     <div className="relative">
-      <ul
+      <div
         ref={trackRef}
         role="region"
         aria-label={label}
         tabIndex={0}
-        className="scrollbar-none -mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-5 px-5 md:-mx-10 md:scroll-px-10 md:px-10 lg:gap-8 xl:-mx-16 xl:scroll-px-16 xl:px-16"
+        className="scrollbar-none -mx-5 snap-x snap-mandatory overflow-x-auto scroll-px-5 px-5 md:-mx-10 md:scroll-px-10 md:px-10 xl:-mx-16 xl:scroll-px-16 xl:px-16"
       >
-        {cards.map((card) => (
-          <li key={card.title} className="w-[78%] shrink-0 snap-start sm:w-[45%] lg:w-[calc((100%-4rem)/3.4)]">
-            <Card {...card} />
-          </li>
-        ))}
-      </ul>
+        <ul className="flex gap-5 lg:gap-8">
+          {cards.map((card) => (
+            <li key={card.title} className="w-[78%] shrink-0 snap-start sm:w-[45%] lg:w-[calc((100%-4rem)/3.4)]">
+              <Card {...card} />
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="mt-8 hidden justify-end gap-3 md:flex">
-        <button type="button" className={arrow} onClick={() => scrollByCard(-1)} disabled={atStart} aria-label="Previous">
+        <button type="button" className={arrow} onClick={() => scrollByCard(-1)} disabled={atStart} aria-label="Show previous cards">
           <span aria-hidden>←</span>
         </button>
-        <button type="button" className={arrow} onClick={() => scrollByCard(1)} disabled={atEnd} aria-label="Next">
+        <button type="button" className={arrow} onClick={() => scrollByCard(1)} disabled={atEnd} aria-label="Show next cards">
           <span aria-hidden>→</span>
         </button>
       </div>

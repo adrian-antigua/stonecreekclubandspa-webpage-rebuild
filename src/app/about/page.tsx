@@ -103,7 +103,7 @@ export default function AboutPage() {
           <ol className="border-t border-slate-950 lg:col-span-8">
             {values.map((v, i) => (
               <Reveal as="li" key={v} delay={i * 80} className="flex items-baseline gap-6 border-b border-stone-300 py-8 md:gap-10">
-                <span aria-hidden className="w-10 shrink-0 font-display text-h2 font-light tabular-nums text-sky-500">
+                <span aria-hidden className="w-10 shrink-0 font-display text-h2 font-light tabular-nums text-sky-700">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <p className="font-display text-h3 font-light text-slate-950">{v}</p>

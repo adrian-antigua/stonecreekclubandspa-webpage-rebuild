@@ -282,7 +282,7 @@ export default function KidsPage() {
                 delay={i * 80}
                 className="flex flex-col gap-4 border-t border-slate-950 pt-6"
               >
-                <span aria-hidden className="font-display text-h2 font-light text-sky-500">
+                <span aria-hidden className="font-display text-h2 font-light text-sky-700">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="font-display text-h3 font-medium">{pkg.name}</h3>

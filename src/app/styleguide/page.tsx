@@ -128,7 +128,7 @@ export default function StyleguidePage() {
                 {group.items.map((s) => (
                   <li key={s.token} className="flex flex-col">
                     <div className={cn("flex aspect-[4/3] items-end p-4 ring-1 ring-stone-300 ring-inset", s.className)}>
-                      <span className={cn("eyebrow", s.dark ? "text-stone-50" : "text-slate-950")}>Aa</span>
+                      <span className={cn("font-display text-h3", s.dark ? "text-stone-50" : "text-slate-950")}>Aa</span>
                     </div>
                     <p className="mt-3 text-small font-medium">{s.token}</p>
                     <p className="text-small tabular-nums text-warmgray-700">{s.hex}</p>

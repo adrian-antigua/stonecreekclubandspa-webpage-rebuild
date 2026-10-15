@@ -6,7 +6,6 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Hero } from "@/components/ui/Hero";
 import { ImageTextSection } from "@/components/ui/ImageTextSection";
 import { Reveal } from "@/components/ui/Reveal";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatBand } from "@/components/ui/StatBand";
 import { site } from "@/content/site";
 import {
