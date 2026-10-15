@@ -6,9 +6,11 @@ type StatBandProps = {
   stats: Stat[];
   /** Accessible name for the region. */
   title?: string;
+  /** Put each label on its own line under the numeral (for longer labels). */
+  stacked?: boolean;
 };
 
-export function StatBand({ stats, title = "Stone Creek by the numbers" }: StatBandProps) {
+export function StatBand({ stats, title = "Stone Creek by the numbers", stacked = false }: StatBandProps) {
   return (
     <section aria-label={title} className="section bg-stone-100">
       <div className="container-site">
@@ -32,6 +34,11 @@ export function StatBand({ stats, title = "Stone Creek by the numbers" }: StatBa
                 {stat.labelFirst ? (
                   <>
                     <span className="text-h2 italic">{stat.label}</span> {stat.value}
+                  </>
+                ) : stacked ? (
+                  <>
+                    {stat.value}
+                    <span className="mt-2 block text-h3">{stat.label}</span>
                   </>
                 ) : (
                   <>
