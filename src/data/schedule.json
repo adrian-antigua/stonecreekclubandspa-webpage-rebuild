@@ -1,0 +1,381 @@
+{
+  "_note": "SAMPLE DATA for the proof of concept. Class names and studios come from reference/content.md; days and times are illustrative, not the club's Fall 2026 schedule.",
+  "classes": [
+    {
+      "day": "Monday",
+      "time": "5:30 AM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Monday",
+      "time": "6:00 AM",
+      "name": "BodyPump™",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Strength"
+    },
+    {
+      "day": "Monday",
+      "time": "8:30 AM",
+      "name": "Hot Flow Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Monday",
+      "time": "9:30 AM",
+      "name": "Barre Burn",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Monday",
+      "time": "10:00 AM",
+      "name": "Aqua Fitness",
+      "studio": "Pool",
+      "minutes": 45,
+      "category": "Aquatics"
+    },
+    {
+      "day": "Monday",
+      "time": "12:00 PM",
+      "name": "HIIT 45",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Cardio"
+    },
+    {
+      "day": "Monday",
+      "time": "5:30 PM",
+      "name": "BodyCombat™",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 55,
+      "category": "Cardio"
+    },
+    {
+      "day": "Monday",
+      "time": "6:00 PM",
+      "name": "Warm Flow Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Tuesday",
+      "time": "5:30 AM",
+      "name": "Interval Boot Camp",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Cardio"
+    },
+    {
+      "day": "Tuesday",
+      "time": "6:00 AM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Tuesday",
+      "time": "8:30 AM",
+      "name": "Strictly Strength",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Strength"
+    },
+    {
+      "day": "Tuesday",
+      "time": "9:00 AM",
+      "name": "Pilates Mat",
+      "studio": "Mind Body Studio",
+      "minutes": 50,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Tuesday",
+      "time": "10:30 AM",
+      "name": "Gentle Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Tuesday",
+      "time": "12:00 PM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Tuesday",
+      "time": "5:30 PM",
+      "name": "BodyPump™",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Strength"
+    },
+    {
+      "day": "Tuesday",
+      "time": "6:30 PM",
+      "name": "Swim Fit",
+      "studio": "Pool",
+      "minutes": 45,
+      "category": "Aquatics"
+    },
+    {
+      "day": "Wednesday",
+      "time": "5:30 AM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Wednesday",
+      "time": "6:00 AM",
+      "name": "BUILT",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Strength"
+    },
+    {
+      "day": "Wednesday",
+      "time": "8:30 AM",
+      "name": "Step & Sculpt",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Cardio"
+    },
+    {
+      "day": "Wednesday",
+      "time": "9:00 AM",
+      "name": "BodyBalance™",
+      "studio": "Mind Body Studio",
+      "minutes": 55,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Wednesday",
+      "time": "10:00 AM",
+      "name": "Aqua Fitness",
+      "studio": "Pool",
+      "minutes": 45,
+      "category": "Aquatics"
+    },
+    {
+      "day": "Wednesday",
+      "time": "12:00 PM",
+      "name": "Boxing Remix",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Cardio"
+    },
+    {
+      "day": "Wednesday",
+      "time": "5:30 PM",
+      "name": "Hot Pilates Sculpt",
+      "studio": "Mind Body Studio",
+      "minutes": 50,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Wednesday",
+      "time": "6:00 PM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Thursday",
+      "time": "5:30 AM",
+      "name": "HIIT 45",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Cardio"
+    },
+    {
+      "day": "Thursday",
+      "time": "6:00 AM",
+      "name": "Hot Flow Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Thursday",
+      "time": "8:30 AM",
+      "name": "BodyPump™",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Strength"
+    },
+    {
+      "day": "Thursday",
+      "time": "9:30 AM",
+      "name": "The Barre Workout",
+      "studio": "Mind Body Studio",
+      "minutes": 50,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Thursday",
+      "time": "10:30 AM",
+      "name": "Mindful Motion",
+      "studio": "Mind Body Studio",
+      "minutes": 45,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Thursday",
+      "time": "12:00 PM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Thursday",
+      "time": "5:30 PM",
+      "name": "Shape & Sculpt",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 50,
+      "category": "Strength"
+    },
+    {
+      "day": "Thursday",
+      "time": "6:30 PM",
+      "name": "Swim Fit",
+      "studio": "Pool",
+      "minutes": 45,
+      "category": "Aquatics"
+    },
+    {
+      "day": "Friday",
+      "time": "5:30 AM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Friday",
+      "time": "6:00 AM",
+      "name": "Total Body Burn",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 50,
+      "category": "Cardio"
+    },
+    {
+      "day": "Friday",
+      "time": "8:30 AM",
+      "name": "BodyCombat™",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 55,
+      "category": "Cardio"
+    },
+    {
+      "day": "Friday",
+      "time": "9:00 AM",
+      "name": "Warm Flow Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Friday",
+      "time": "10:00 AM",
+      "name": "Aqua Fitness",
+      "studio": "Pool",
+      "minutes": 45,
+      "category": "Aquatics"
+    },
+    {
+      "day": "Friday",
+      "time": "12:00 PM",
+      "name": "Bells & Bands",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 45,
+      "category": "Strength"
+    },
+    {
+      "day": "Saturday",
+      "time": "7:30 AM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Saturday",
+      "time": "8:00 AM",
+      "name": "BodyPump™",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Strength"
+    },
+    {
+      "day": "Saturday",
+      "time": "8:30 AM",
+      "name": "Cardio Sculpt",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 50,
+      "category": "Cardio"
+    },
+    {
+      "day": "Saturday",
+      "time": "9:00 AM",
+      "name": "Hot Flow Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Saturday",
+      "time": "10:00 AM",
+      "name": "Aqua Fitness",
+      "studio": "Pool",
+      "minutes": 45,
+      "category": "Aquatics"
+    },
+    {
+      "day": "Sunday",
+      "time": "8:30 AM",
+      "name": "Stages Cycling",
+      "studio": "Spin Studio",
+      "minutes": 45,
+      "category": "Cycling"
+    },
+    {
+      "day": "Sunday",
+      "time": "9:00 AM",
+      "name": "BodyBalance™",
+      "studio": "Mind Body Studio",
+      "minutes": 55,
+      "category": "Mind Body"
+    },
+    {
+      "day": "Sunday",
+      "time": "9:30 AM",
+      "name": "Strictly Strength",
+      "studio": "Cardio/Strength Studio",
+      "minutes": 60,
+      "category": "Strength"
+    },
+    {
+      "day": "Sunday",
+      "time": "10:30 AM",
+      "name": "Gentle Yoga",
+      "studio": "Mind Body Studio",
+      "minutes": 60,
+      "category": "Mind Body"
+    }
+  ]
+}
