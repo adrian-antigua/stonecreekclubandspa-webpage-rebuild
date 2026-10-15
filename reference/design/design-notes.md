@@ -10,10 +10,12 @@ cream neutral, nature photography, and "property + experiences" structure map al
 Lean hardest on this one.
 
 ## Palette direction
-- Anchor: deep pine/forest green or slate (check the logo first — derive from it)
+Derived from the logo in reference/brand/ — sky blue and warm gray.
+- Anchor: a deep slate or navy that the sky blue sits on (implemented as blue slate `#1F2C36`)
 - Neutral: warm stone / cream (not white)
-- Accent: clay-court terracotta or a muted brass — one, used sparingly
-- Tennis photography on the clay courts will carry a lot of the warmth; let it
+- Accent: the logo's sky blue, used sparingly — rules, focus, link hover; never a fill
+- Clay-court terracotta may appear only in photography; let the court photos carry the warmth
+- No pure black, no pure white, no SaaS blue. Full token table lives on /styleguide.
 
 ## Structural differences from Spa 23
 - **Tennis is a pillar**, not a program. It gets a top-level nav item and its own

@@ -102,8 +102,8 @@ export default function StyleguidePage() {
       {/* Hero — demonstrates the transparent → solid nav */}
       <section data-nav-hero className="tone-dark relative flex min-h-[88svh] items-end overflow-hidden bg-slate-950 text-stone-50">
         <Image
-          src="/images/aerial-campus-wetlands.jpg"
-          alt="Aerial view of the Stone Creek campus: clubhouse, tennis courts and pools surrounded by pines and wetlands"
+          src="/images/tennis-courts-dusk-walkway.jpg"
+          alt="Stone Creek's lit tennis courts at dusk, with a walkway leading to the clubhouse under a deep blue sky"
           fill
           preload
           sizes="100vw"
@@ -299,7 +299,7 @@ export default function StyleguidePage() {
           <VideoEmbed
             id={site.virtualTourVideoId}
             title="Take a Virtual Tour of Stone Creek Club & Spa"
-            poster={{ src: "/images/tennis-courts-dusk-walkway.jpg", alt: "Stone Creek's lit tennis courts at dusk" }}
+            poster={{ src: "/images/pool-deck-wetland-pond.jpg", alt: "The pool deck and its blue umbrellas seen across a wetland pond" }}
           />
           <p className="mt-4 eyebrow text-slate-600">Take a Virtual Tour</p>
         </div>

@@ -586,6 +586,12 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
   wordmark. The spa and café sub-brands use the same mark.
 - **Photos:** 30 facility photos named by subject (aerials, courts, pools, spa, locker
   rooms, café, fitness, Pebble Creek, event spaces).
+- ⚠ **Watermarked — do not use on the site:** `aerial-campus-wetlands.jpg`,
+  `aerial-clubhouse-and-courts.jpg` and `aerial-courts-overhead.jpg` carry a "Cloud X
+  Photography" watermark (bottom-right corner). Use them only if the club supplies clean
+  originals or the photographer grants permission. Clean campus/court alternatives:
+  `tennis-courts-dusk-walkway.jpg` (current styleguide hero), `tennis-hard-courts-aerial.jpg`
+  (shows sponsor banners), `pool-deck-wetland-pond.jpg`.
 - **PDFs** (`pdfs/`): class schedule (Fall 2026), member guide (PDF current; `.docx` is an
   older edition — don't use), spa menu (11.25), café menu 2025, catering menu, tailgate
   catering menu, PT / Pilates / FST brochures.
