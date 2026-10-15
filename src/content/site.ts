@@ -157,3 +157,51 @@ export const visitInterests = ["Tennis & Pickleball", "Childcare"];
 
 /** Options from the live form's "How'd You Hear About Us?" field. */
 export const referralSources = ["Facebook", "Instagram", "Direct Mail", "Friend or Family", "Google"];
+
+export type Amenity = {
+  label: string;
+  title: string;
+  image: { src: string; alt: string };
+  href?: string;
+};
+
+/** Amenity rail. Titles are facts from content.md; labels are UI categories. */
+export const amenities: Amenity[] = [
+  { label: "Tennis & Pickleball", title: "19 Lit Courts", href: "/tennis", image: { src: "/images/tennis-hard-courts-aerial.jpg", alt: "Blue and green hard courts lined with Stone Creek windscreens and tall pines" } },
+  { label: "Aquatics", title: "25-Meter Saltwater Lap Pool", image: { src: "/images/lap-pool-swimmer.jpg", alt: "A swimmer doing laps in the six-lane saltwater lap pool" } },
+  { label: "Aquatics", title: "Resort Style Pool", href: "/kids", image: { src: "/images/resort-pool-splash-zone.jpg", alt: "Resort pool splash zone with spray features under blue umbrellas and tall pines" } },
+  { label: "Fitness", title: "75+ Weekly Classes", href: "/fitness", image: { src: "/images/group-fitness-studio-class.jpg", alt: "A group fitness class lifting weighted balls overhead in a sunlit studio" } },
+  { label: "Fitness", title: "Pilates Reformer Studio", href: "/fitness", image: { src: "/images/pilates-reformer-studio.jpg", alt: "Three women working out on Pilates reformers by tall windows" } },
+  { label: "Wellness", title: "The Spa at Stone Creek", href: "/spa", image: { src: "/images/spa-relaxation-lounge.jpg", alt: "Guests in robes resting on loungers in the spa relaxation lounge" } },
+  { label: "Recovery", title: "Adult Locker Rooms", image: { src: "/images/womens-locker-room-vanity.jpg", alt: "Women's locker room vanity with mirrors and upholstered stools" } },
+  { label: "Family", title: "Pebble Creek Childcare", href: "/kids", image: { src: "/images/pebble-creek-movie-area.jpg", alt: "Colorful kid-sized seating in the Pebble Creek movie area" } },
+  { label: "Dining", title: "The Café at Stone Creek", href: "/cafe", image: { src: "/images/cafe-dining-room.jpg", alt: "The café dining room with orange chairs and pendant lights" } },
+];
+
+export type Membership = { name: string; rate: string; covers: string; enrollment: string };
+
+/** Rates from /membership-rates (plus tax). */
+export const memberships: Membership[] = [
+  {
+    name: "Individual",
+    rate: "$165",
+    covers: "One adult 18 or older, with full access to all facilities, programs, and services of the club.",
+    enrollment: "$600",
+  },
+  {
+    name: "Couple",
+    rate: "$272",
+    covers: "One adult 18 or older and another individual from the same household (adult or child).",
+    enrollment: "$800",
+  },
+  {
+    name: "Family",
+    rate: "$339",
+    covers:
+      "Up to two adults over 18 in the same household, and all dependents under 21 (under 24 if a full-time student).",
+    enrollment: "$1,150",
+  },
+];
+
+export const directionsUrl =
+  "https://www.google.com/maps/search/?api=1&query=Stone+Creek+Club+and+Spa%2C+1201+Ochsner+Blvd%2C+Covington%2C+LA+70433";

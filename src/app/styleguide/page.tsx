@@ -13,7 +13,7 @@ import { PullQuote } from "@/components/ui/PullQuote";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatBand } from "@/components/ui/StatBand";
 import { VideoEmbed } from "@/components/ui/VideoEmbed";
-import { hours, referralSources, site, stats, testimonials, visitInterests } from "@/content/site";
+import { amenities, hours, referralSources, site, stats, testimonials, visitInterests } from "@/content/site";
 import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
@@ -60,15 +60,7 @@ const spacing = [
   { name: "grid", value: "12 columns at lg · gap 40–64px" },
 ];
 
-const amenityCards: CardData[] = [
-  { label: "Aquatics", title: "25-Meter Saltwater Lap Pool", image: { src: "/images/lap-pool-swimmer.jpg", alt: "A swimmer doing laps in the six-lane saltwater lap pool" } },
-  { label: "Aquatics", title: "Resort Style Pool", image: { src: "/images/resort-pool-splash-zone.jpg", alt: "Resort pool splash zone with spray features under blue umbrellas and tall pines" } },
-  { label: "Wellness", title: "The Spa at Stone Creek", image: { src: "/images/spa-relaxation-lounge.jpg", alt: "Guests in robes resting on loungers in the spa relaxation lounge" } },
-  { label: "Fitness", title: "Pilates Reformer Studio", image: { src: "/images/pilates-reformer-studio.jpg", alt: "Three women working out on Pilates reformers by tall windows" } },
-  { label: "Family", title: "Pebble Creek Childcare", image: { src: "/images/pebble-creek-movie-area.jpg", alt: "Colorful kid-sized seating in the Pebble Creek movie area" } },
-  { label: "Dining", title: "The Café at Stone Creek", image: { src: "/images/cafe-dining-room.jpg", alt: "The café dining room with orange chairs and pendant lights" } },
-  { label: "Recovery", title: "Adult Locker Rooms", image: { src: "/images/womens-locker-room-vanity.jpg", alt: "Women's locker room vanity with mirrors and upholstered stools" } },
-];
+const amenityCards: CardData[] = amenities;
 
 const visitFields: FormField[] = [
   { type: "text", name: "firstName", label: "First Name", required: true, half: true, autoComplete: "given-name" },
@@ -266,8 +258,8 @@ export default function StyleguidePage() {
 
       <GuideSection id="cards" index="07" title="Card & CardRail" note="Image, small label, one line. The rail scroll-snaps; arrows appear from tablet up.">
         <div className="mb-16 grid gap-8 sm:grid-cols-2 lg:w-2/3">
-          <Card {...amenityCards[2]} href="/spa" />
-          <Card {...amenityCards[0]} ratio="landscape" sizes="(min-width: 1024px) 30vw, 50vw" />
+          <Card {...amenityCards[5]} />
+          <Card {...amenityCards[1]} ratio="landscape" sizes="(min-width: 1024px) 30vw, 50vw" />
         </div>
         <SectionHeading eyebrow="Amenities" title="Everything under one roof" className="mb-10" />
         <CardRail cards={amenityCards} label="Amenities" />

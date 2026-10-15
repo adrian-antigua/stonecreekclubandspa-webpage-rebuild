@@ -5,10 +5,12 @@ type HoursTableProps = {
   schedules: HoursSchedule[];
   variant?: "full" | "condensed";
   tone?: "light" | "dark";
+  /** Columns for the full variant at md and up. */
+  columns?: 1 | 2;
   className?: string;
 };
 
-export function HoursTable({ schedules, variant = "full", tone = "light", className }: HoursTableProps) {
+export function HoursTable({ schedules, variant = "full", tone = "light", columns = 2, className }: HoursTableProps) {
   const dark = tone === "dark";
 
   if (variant === "condensed") {
@@ -25,7 +27,7 @@ export function HoursTable({ schedules, variant = "full", tone = "light", classN
   }
 
   return (
-    <div className={cn("grid gap-12 md:grid-cols-2 md:gap-x-16", className)}>
+    <div className={cn("grid gap-12", columns === 2 && "md:grid-cols-2 md:gap-x-16", className)}>
       {schedules.map((s) => (
         <table key={s.id} className="w-full border-collapse text-left">
           <caption
@@ -39,7 +41,7 @@ export function HoursTable({ schedules, variant = "full", tone = "light", classN
           <tbody>
             {s.rows.map((row) => (
               <tr key={row.days} className={cn("border-b text-small sm:text-body", dark ? "border-slate-800" : "border-stone-300")}>
-                <th scope="row" className={cn("py-3 pr-4 align-top font-medium", dark ? "text-stone-50" : "text-slate-950")}>
+                <th scope="row" className={cn("whitespace-nowrap py-3 pr-4 align-top font-medium", dark ? "text-stone-50" : "text-slate-950")}>
                   {row.days}
                 </th>
                 <td className={cn("py-3 text-right align-top tabular-nums", dark ? "text-stone-100" : "text-warmgray-700")}>
