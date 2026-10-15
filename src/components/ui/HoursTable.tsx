@@ -29,7 +29,7 @@ export function HoursTable({ schedules, variant = "full", tone = "light", column
   return (
     <div className={cn("grid gap-12", columns === 2 && "md:grid-cols-2 md:gap-x-16", className)}>
       {schedules.map((s) => (
-        <table key={s.id} className="w-full border-collapse text-left">
+        <table key={s.id} className="w-full self-start border-collapse text-left">
           <caption
             className={cn(
               "mb-4 border-b pb-4 text-left font-display text-h3 font-medium",
