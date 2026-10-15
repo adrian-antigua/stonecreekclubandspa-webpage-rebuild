@@ -6,8 +6,7 @@
 > **Nothing goes on the site that isn't here.**
 >
 > Source tags used below: *(site /page)* · *(Member Guide PDF)* · *(Spa Menu PDF)* etc.
-> Where sources disagree, see **Conflicts** — resolved items name the figure to use; ⚠ items still need confirming with the club
-> before publishing a number.
+> Where sources disagree, see **Conflicts** — each item names the figure to use on the site
 
 ## Identity
 - **Name:** Stone Creek Club & Spa (legal: Stone Creek Club & Spa, LLC — employment page)
@@ -42,14 +41,15 @@
 - **Pickleball courts → use 4.** (Also published: 5 on home and /premier-club, 7 in Member Guide PDF.)
 - **Group fitness studios → use 4.** (Also published: 5 on /premier-club.)
 - **Weekly classes → use 75+.** (Also published: "over 77" on /group-fitness.)
-- **Second spa package name → use "Signature Creekside Retreat"** (the /spa page's name).
-  (Also published: "Creekside Renewal Ritual" in the Spa Menu PDF.)
-- ⚠ **Still open — tennis courts:** /tennis says 19 courts total (9 clay + 5 hard + 4
-  pickleball + practice); home and Member Guide say "14 tournament-quality tennis courts"
-  (= 9 + 5).
-- ⚠ **Still open — Family Workout Times:** /youth-fitness says Thu 7 PM–close, Fri 2 PM–close,
-  Sat & Sun 1 PM–close; Member Guide PDF says Wed & Thu 7 PM–close, Fri 1 PM–close, Sat &
-  Sun 12 PM–close.
+- **Spa package names → "Signature Creekside Retreat" ($480) and "Creekside Renewal Ritual"
+  ($470)** (Spa Menu PDF names, so the two are distinct). (Also published: /spa calls both
+  "Signature Creekside Retreat".)
+- **Courts → use "14 tennis courts (9 clay Hydro-Courts, 5 hard) + 4 pickleball + 1 lighted
+  practice court = 19 courts total."** (Also published: home and Member Guide give only
+  "14 tournament-quality tennis courts".)
+- **Family Workout Times → use the website's: Thu 7 PM–close, Fri 2 PM–close, Sat & Sun
+  1 PM–close.** (Also published: Member Guide PDF says Wed & Thu 7 PM–close, Fri 1 PM–close,
+  Sat & Sun 12 PM–close.)
 
 ## Hours
 **Club:** Mon–Thu 4:45 AM–9:00 PM · Fri 4:45 AM–8:00 PM · Sat 7:00 AM–6:00 PM · Sun 8:00 AM–6:00 PM
@@ -146,9 +146,8 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
 - **Membership Director:** `[TBD]`
 
 ## Stat band (their own numbers)
-- **19 Courts** — 9 clay Hydro-Courts, 5 hard-surface competitive courts, 4 pickleball
-  courts, 1 lighted practice court with hitting wall (doubles as pickleball) — see
-  Conflicts (tennis court total still open)
+- **19 Courts** — breakdown beneath: 14 tennis courts (9 clay Hydro-Courts, 5 hard) +
+  4 pickleball + 1 lighted practice court = 19 courts total
 - **25 Meters** — 6-lane heated saltwater lap pool + resort-style pool with zero-entry
   beach and spray features
 - **75+ Classes** — complimentary weekly group fitness across 4 studios
@@ -279,8 +278,9 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
 
 ## Tennis & Pickleball (verbatim from /tennis)
 - "The Stone Creek tennis campus is one of the finest in the state"
-- 9 clay Hydro-Courts · 5 world-class hard-surface competitive courts · 4 pickleball courts
-  · lighted practice court with hitting wall · spacious viewing areas
+- **Courts:** 14 tennis courts (9 clay Hydro-Courts, 5 hard) + 4 pickleball + 1 lighted
+  practice court = 19 courts total. Practice court has a hitting wall; spacious viewing
+  areas.
 - All 19 courts lit at 12,000 watts per court on 30-ft poles
 - Court reservations via Club Automation; complimentary for members; up to 48 hours in
   advance; one reservation per day, max 160 minutes *(Member Guide PDF)*
@@ -358,9 +358,8 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
 - **Packages:**
   - Signature Creekside Retreat — Signature Massage + Facial + Manicure + Pedicure, spa
     meal, gratuities included — **$480**
-  - Signature Creekside Retreat (ritual package; /spa name — see Conflicts) — Facelift
-    Facial + Pure Hydration Ritual + Stone Creek Pedicure, spa meal, gratuities included —
-    **$470**
+  - Creekside Renewal Ritual — Facelift Facial + Pure Hydration Ritual + Stone Creek
+    Pedicure, spa meal, gratuities included — **$470**
   - Spa Day Groups — full club access, café menu served for the group, complimentary
     bottle of champagne (price `[TBD]`)
 - **Massages:**
@@ -439,7 +438,7 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
   Program) certification.
 - **10 and under:** checked in and supervised; tennis, pickleball, café, pools with direct
   supervision; never strength floor, cardio deck or group fitness.
-- Family Workout Times — see Conflicts (still open).
+- **Family Workout Times:** Thu 7 PM–close · Fri 2 PM–close · Sat & Sun 1 PM–close
 - Family BOOtcamp (ages 7+) listed on Events.
 
 ## The Café at Stone Creek (/cafe-catering, /menu, Café Menu 2025 PDF)
