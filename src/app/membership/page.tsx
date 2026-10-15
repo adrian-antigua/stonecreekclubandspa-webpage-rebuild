@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { DemoForm } from "@/components/ui/DemoForm";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Hero } from "@/components/ui/Hero";
 import { MembershipRates } from "@/components/ui/MembershipRates";
-import { Placeholder } from "@/components/ui/Placeholder";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { visitFormFields } from "@/content/forms";
@@ -36,6 +36,13 @@ const policyNotes = [
     body: [
       "Adult-only hours on the fitness floor, cardio floor and basketball court: Monday–Friday 11:00 AM–1:00 PM and Monday–Thursday 5:30–7:00 PM.",
       "Members 14–17 may enter the club unescorted. Members 13 and under must be checked in and supervised by an adult; ages 11–13 may use the strength and cardio floors during Family Workout Times (Thursday 7 PM–close, Friday 2 PM–close, Saturday & Sunday 1 PM–close) after completing YEP training.",
+    ],
+  },
+  {
+    title: "Guests",
+    body: [
+      "Members may bring up to 4 guests per day per membership, and a guest may visit a maximum of 6 times per calendar year. Guests under 18 require a liability waiver completed by a guardian, guests 16 and older must present a government-issued photo ID, and guests under 14 must be closely supervised by an adult.",
+      "Guest fees per calendar day: with a member, $20 (ages 1–13) or $40 (14 and over). With a guest pass, $25 (1–13) or $50 (14 and over). Members of IHRSA affiliate clubs, $40.",
     ],
   },
   {
@@ -165,7 +172,7 @@ export default function MembershipPage() {
               Good to Know
             </h2>
           </div>
-          <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+          <div className="grid gap-12 md:grid-cols-2 md:gap-10 xl:grid-cols-4">
             {policyNotes.map((note, i) => (
               <Reveal key={note.title} delay={i * 100} className="flex flex-col gap-4 border-t border-slate-950 pt-6">
                 <h3 className="font-display text-h3 font-medium">{note.title}</h3>
@@ -204,7 +211,15 @@ export default function MembershipPage() {
           <ul className="grid grid-cols-2 gap-x-5 gap-y-10 md:grid-cols-3 md:gap-x-8 lg:grid-cols-6 lg:gap-x-6">
             {memberServicesTeam.map((person, i) => (
               <Reveal as="li" key={person.email} delay={(i % 6) * 80} className="flex flex-col gap-4">
-                <Placeholder compact label="Portrait" description={`Headshot of ${person.name}, ${person.title}`} />
+                <div className="relative aspect-[4/5] overflow-hidden bg-stone-300">
+                  <Image
+                    src={person.photo}
+                    alt={`Portrait of ${person.name}`}
+                    fill
+                    sizes="(min-width: 1024px) 16vw, (min-width: 768px) 30vw, 45vw"
+                    className="object-cover"
+                  />
+                </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="font-display text-h3 font-medium leading-tight">{person.name}</h3>
                   <p className="text-small text-slate-600">{person.title}</p>

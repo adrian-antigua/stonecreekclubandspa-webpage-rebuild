@@ -592,6 +592,12 @@ Christmas Eve, New Year's Eve. Changes posted at least two weeks in advance.
   originals or the photographer grants permission. Clean campus/court alternatives:
   `tennis-courts-dusk-walkway.jpg` (current styleguide hero), `tennis-hard-courts-aerial.jpg`
   (shows sponsor banners), `pool-deck-wetland-pond.jpg`.
+- **Staff headshots** (`staff/`, 1080px squares from the live site): Member Services —
+  julie-rideau, michelle-gaudet, claudia-guidry, robyn-ferguson, ava-smith, jordan-schaefer;
+  tennis pros — brett-schwartz, patrick-lewis, nadia-hitzman, mark-dominguez. Ava's and
+  Jordan's files are generically named on the site ("membership headshots.png" /
+  "membership headshots (1).png"); identified by their position directly before each name
+  in the page markup.
 - **PDFs** (`pdfs/`): class schedule (Fall 2026), member guide (PDF current; `.docx` is an
   older edition — don't use), spa menu (11.25), café menu 2025, catering menu, tailgate
   catering menu, PT / Pilates / FST brochures.

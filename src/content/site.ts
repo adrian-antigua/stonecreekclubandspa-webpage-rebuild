@@ -206,16 +206,16 @@ export const memberships: Membership[] = [
 export const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=Stone+Creek+Club+and+Spa%2C+1201+Ochsner+Blvd%2C+Covington%2C+LA+70433";
 
-export type TeamMember = { name: string; title: string; email: string };
+export type TeamMember = { name: string; title: string; email: string; photo: string };
 
 /** Member Services team as listed on /membership (6 people as of 2026-10-15). */
 export const memberServicesTeam: TeamMember[] = [
-  { name: "Julie Rideau", title: "Member Services Representative", email: "JulieR@stonecreekclubandspa.com" },
-  { name: "Michelle Gaudet", title: "Member Services Representative", email: "Michelleg@stonecreekclubandspa.com" },
-  { name: "Claudia Guidry", title: "Marketing Coordinator", email: "ClaudiaG@stonecreekclubandspa.com" },
-  { name: "Robyn Ferguson", title: "Member Services Representative", email: "RobynF@stonecreekclubandspa.com" },
-  { name: "Ava Smith", title: "Member Services Representative", email: "AvaS@stonecreekclubandspa.com" },
-  { name: "Jordan Schaefer", title: "Member Services Representative", email: "JordanS@stonecreekclubandspa.com" },
+  { name: "Julie Rideau", title: "Member Services Representative", email: "JulieR@stonecreekclubandspa.com", photo: "/images/staff/julie-rideau.jpg" },
+  { name: "Michelle Gaudet", title: "Member Services Representative", email: "Michelleg@stonecreekclubandspa.com", photo: "/images/staff/michelle-gaudet.jpg" },
+  { name: "Claudia Guidry", title: "Marketing Coordinator", email: "ClaudiaG@stonecreekclubandspa.com", photo: "/images/staff/claudia-guidry.jpg" },
+  { name: "Robyn Ferguson", title: "Member Services Representative", email: "RobynF@stonecreekclubandspa.com", photo: "/images/staff/robyn-ferguson.jpg" },
+  { name: "Ava Smith", title: "Member Services Representative", email: "AvaS@stonecreekclubandspa.com", photo: "/images/staff/ava-smith.jpg" },
+  { name: "Jordan Schaefer", title: "Member Services Representative", email: "JordanS@stonecreekclubandspa.com", photo: "/images/staff/jordan-schaefer.jpg" },
 ];
 
 /** New Member Benefits from /membership-rates (verbatim). */
