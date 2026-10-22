@@ -7,8 +7,6 @@ import { cn } from "@/lib/cn";
 const QUERY = "(prefers-reduced-motion: no-preference)";
 const YT_ORIGIN = "https://www.youtube.com";
 const PLAYING = 1;
-// YouTube flashes its own controls for a few seconds when playback starts (mobile especially); hold the poster until they fade.
-const REVEAL_DELAY_MS = 4500;
 
 function subscribe(callback: () => void) {
   const mql = window.matchMedia(QUERY);
@@ -35,22 +33,18 @@ export function HeroVideo({ id, title }: { id: string; title: string }) {
   // Listen for the IFrame API's state updates (enabled by enablejsapi=1 + the "listening" handshake).
   useEffect(() => {
     if (!enabled) return;
-    let timer: ReturnType<typeof setTimeout> | undefined;
     const onMessage = (e: MessageEvent) => {
       if (e.origin !== YT_ORIGIN || e.source !== frameRef.current?.contentWindow) return;
       try {
         const data = typeof e.data === "string" ? JSON.parse(e.data) : e.data;
         const state = data?.info?.playerState ?? (data?.event === "onStateChange" ? data.info : undefined);
-        if (state === PLAYING && !timer) timer = setTimeout(() => setVisible(true), REVEAL_DELAY_MS);
+        if (state === PLAYING) setVisible(true);
       } catch {
         // Not a player message.
       }
     };
     window.addEventListener("message", onMessage);
-    return () => {
-      window.removeEventListener("message", onMessage);
-      clearTimeout(timer);
-    };
+    return () => window.removeEventListener("message", onMessage);
   }, [enabled]);
 
   if (!enabled) return null;
@@ -90,7 +84,7 @@ export function HeroVideo({ id, title }: { id: string; title: string }) {
           onLoad={() => post({ event: "listening", id: 1, channel: "widget" })}
           // 16:9 cover crop for any container shape, portrait phones included.
           className={cn(
-            "absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 transition-opacity duration-[1500ms]",
+            "absolute left-1/2 top-1/2 h-[max(100%,56.25vw)] w-[max(100%,177.78vh)] -translate-x-1/2 -translate-y-1/2 transition-opacity duration-700",
             visible ? "opacity-100" : "opacity-0",
           )}
         />
